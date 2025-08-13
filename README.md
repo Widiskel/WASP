@@ -13,6 +13,33 @@
 
 </div>
 
+## 📖 Table of Contents
+- [🚀 WASP](#-wasp)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [📖 Overview](#-overview)
+    - [🌟 Features](#-features)
+  - [🛠 Prerequisites](#-prerequisites)
+  - [🚀 Getting Started](#-getting-started)
+    - [Option 1: Quick Start with NPX](#option-1-quick-start-with-npx)
+    - [Option 2: Manual Setup](#option-2-manual-setup)
+  - [🔧 Configuration](#-configuration)
+    - [Model Configuration](#model-configuration)
+    - [Response Formats](#response-formats)
+      - [UOMI Format](#uomi-format)
+      - [OpenAI Format](#openai-format)
+  - [💡 Usage Examples](#-usage-examples)
+    - [Interactive Mode](#interactive-mode)
+    - [Development](#development)
+      - [Custom Model Integration](#custom-model-integration)
+  - [📊 Performance Monitoring](#-performance-monitoring)
+  - [🔐 Security](#-security)
+  - [🐛 Debugging](#-debugging)
+  - [📚 API Reference](#-api-reference)
+    - [Host Functions](#host-functions)
+  - [Compiled WASM](#compiled-wasm)
+  - [🤝 Contributing](#-contributing)
+
+
 ## 📖 Overview
 
 This development environment allows you to create, test, and debug UOMI agents using WebAssembly (WASM) and Rust. The environment provides seamless integration with both UOMI and third-party LLM services, supporting multiple model configurations and API formats.
@@ -90,11 +117,11 @@ The environment supports multiple model configurations through `uomi.config.json
 }
 ```
 
-you can run the node-ai service following this repository [node-ai](https://github.com/Uomi-network/uomi-node-ai)
+You can run the node-ai service by following the instruction in this [node-ai](https://github.com/Uomi-network/uomi-node-ai) repository.
 
-doing that you don't need to specify any url/api_key in the models configuration, you will run the production version of the node-ai service.
+By doing that, you don't need to specify a `url` or `api-key` in the model's configuration, and you will run the production version of the node-ai service.
 
-if you don't have enough resources to run the node-ai service you can use a third-party service like openai, in this case you need to specify the url and the api_key in the models configuration.
+If you don't have enough resources to run the node-ai service, you can use a third-party service like openAI, in this case you need to specify the `url` and `api_key` in the models configuration.
 
 ### Response Formats
 
